@@ -327,9 +327,9 @@ h6 {
 }
 
 .blocks__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.333%;
-          flex: 0 1 33.333%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
   padding: 0px 10px;
 }
 
@@ -351,60 +351,12 @@ h6 {
 .blocks__title {
   font-size: 20px;
   margin: 0px 0px 15px 0px;
+  padding: 0px 20px 0px 0px;
 }
 
 .blocks__text {
   font-size: 18px;
   line-height: 1.3;
-}
-
-.show__body {
-  background-color: #fff;
-}
-
-.show__text {
-  font-size: 20px;
-  line-height: 1.3;
-  margin: 0px 0px 10px 0px;
-}
-
-.show__button-more {
-  font-size: 18px;
-  cursor: pointer;
-  font-weight: 700;
-  margin: 0px 0px 20px 0px;
-}
-
-.show__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0px -10px;
-  row-gap: 20px;
-}
-
-.show__item {
-  padding: 0px 10px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.333%;
-          flex: 0 1 33.333%;
-}
-
-.show__content {
-  padding: 15px;
-  background-color: yellow;
-}
-
-.show__title {
-  font-size: 22px;
-  margin: 0px 0px 15px 0px;
-}
-
-.show__text {
-  font-size: 20px;
-  line-height: 1.2;
 }
 
 .dividers__line {
@@ -422,6 +374,8 @@ h6 {
 .dividers__result {
   font-size: 16px;
   font-weight: 700;
+  line-height: 1.3;
+  word-break: break-all;
 }
 
 .search-text__field {
@@ -521,6 +475,70 @@ h6 {
 .search-text__num {
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (max-width: 61.99875em) {
+  .page {
+    padding: 20px 20px;
+  }
+
+  .poligon {
+    padding: 20px;
+  }
+
+  .blocks__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+
+  .blocks__wrapper {
+    padding: 15px 10px 10px;
+  }
+}
+
+@media (max-width: 47.99875em) {
+  .poligon {
+    padding: 15px;
+  }
+
+  .blocks__title {
+    margin: 0px 0px 10px 0px;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .blocks__body {
+    display: block;
+  }
+
+  .blocks__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .page {
+    padding: 10px 0px;
+  }
+
+  .poligon {
+    padding: 15px 10px;
+  }
+
+  .poligon__title {
+    font-size: 23px;
+  }
+
+  .blocks__button-block {
+    display: block;
+    text-align: center;
+  }
+
+  .blocks__button {
+    margin: 0px 0px 20px 0px;
+  }
 }
 
 .webp .wrapper{ background: url(../img/main-bg.webp) 0 0/cover no-repeat; }
