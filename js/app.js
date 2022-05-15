@@ -63,10 +63,6 @@
             if (wordValue.length) wordValue.forEach((item => {
                 item.remove();
             }));
-            if (!wordLabel.classList.contains("_active") && !symbolLabel.classList.contains("_active")) {
-                setWordCount(textareaValue);
-                setSymbolCount(textareaValue);
-            }
             if (wordLabel.classList.contains("_active")) setWordCount(textareaValue);
             if (symbolLabel.classList.contains("_active")) setSymbolCount(textareaValue);
         }
